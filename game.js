@@ -102,11 +102,11 @@ class Game{
                  
                   if (player.index !== null) {
                      //fill code here, to destroy the objects.
-                     for (var i = 0; i < fruitGroup.length; i++) {
-                        if (fruitGroup.get(i).isTouching(players)) {
-                            fruitGroup.get(i).destroy();
+                     for (var y = 0; y < fruitGroup.length; y++) {
+                        if (fruitGroup.get(y).isTouching(players)) {
+                            fruitGroup.get(y).destroy();
                             player.score =player.score+1;
-                            player.update();
+                            
                   }
                      }
                     }
